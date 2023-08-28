@@ -1,0 +1,196 @@
+﻿<section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card card-registration my-4">
+                    <div class="row g-0">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                                 alt="Sample photo" class="img-fluid"
+                                 style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+
+                                <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline" id="fname">
+                                                <input type="text" id="firstName" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1m">First name</label>
+                                                <br><div class="formerror" style="color:red"></div><br>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline" id="Lname">
+                                                <input type="text" id="lastName" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1n">Last name</label>
+                                                <br><div class="formerror" style="color:red"></div><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline" id="mothername">
+                                                <input type="text" id="motherName" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1m1">Mother's name</label>
+                                                <br><div class="formerror" style="color:red"></div><br>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline" id="fathername">
+                                                <input type="text" id="fatherName" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1n1">Father's name</label>
+                                                <br><div class="formerror" style="color:red"></div><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4" id="add">
+                                        <textarea id="address" class="form-control form-control-lg"> </textarea>
+                                        <label class="form-label" for="form3Example8">Address</label>
+                                        <br><div class="formerror" style="color:red"></div><br>
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2" id="Gender">
+
+                                        <h6 class="mb-0 me-4">Gender: </h6>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="gender" id="femaleGender"
+                                                   value="Female" />
+                                            <label class="form-check-label" for="femaleGender">Female</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0 me-4">
+                                            <input class="form-check-input" type="radio" name="gender" id="maleGender"
+                                                   value="Male" />
+                                            <label class="form-check-label" for="maleGender">Male</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline mb-0">
+                                            <input class="form-check-input" type="radio" name="gender" id="otherGender"
+                                                   value="Other" />
+                                            <label class="form-check-label" for="otherGender">Other</label>
+                                        </div>
+                                        <br><div class="formerror" style="color:red"></div><br>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4" id="stat">
+
+                                            <select class="select" name="State" id="state">
+                                                <option value="0">State</option>
+                                                <option value="1">Maharashtra</option>
+                                                <option value="2">Goa</option>
+                                                <option value="3">Uttar Pradesh</option>
+                                            </select>
+                                            <br><div class="formerror" style="color:red"></div><br>
+                                        </div>
+                                        <div class="col-md-6 mb-4" id="cit">
+
+                                            <select class="select" name="City" id="city">
+                                                <option value="0">City</option>
+                                                <option value="1">Mumbai</option>
+                                                <option value="2">Madgaon</option>
+                                                <option value="3">Varanasi</option>
+                                            </select>
+                                            <br><div class="formerror" style="color:red"></div><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4" id="Dob">
+                                        <input type="date" id="date" name="DateOfBirth" class="form-control datetimepicker" />
+                                        <label class="form-label" for="form3Example9">DOB</label>
+                                        <br><div class="formerror" style="color:red"></div><br>
+                                    </div>
+
+                                    <div class="form-outline mb-4" id="email">
+                                        <input type="text" id="emailid" name="EmailId" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example97">Email ID</label>
+                                        <br><div class="formerror" style="color:red"></div><br>
+                                    </div>
+
+                                    <div class="form-outline mb-4" id="pin">
+                                        <input type="text" id="Pincode" name="Pincode" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example90">Pincode</label>
+                                        <br><div class="formerror" style="color:red"></div><br>
+                                    </div>
+
+                                    <div class="row">
+                                        <label class="form-label" for="form3Example99">Language</label>
+                                        <div class="col-md-6 mb-4" id="lbl">
+                                            <select class="selectpicker" multiple aria-label="Default select example" id="language" data-live-search="true">
+                                                <option value="0"></option>
+                                                <option value="1">Asp.Net</option>
+                                                <option value="2">JavaScript</option>
+                                                <option value="3">C#</option>
+                                                <option value="4">C++</option>
+                                            </select>
+                                            <br><div class="formerror" style="color:red"></div><br>
+                                        </div>
+                                    </div>
+
+                                    <div>
+
+                                        <label class="form-label" for="form3Example99">Select Hobbies</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Hobbies" value="Football" id="check1">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Football
+                                        </label>
+                                    </div>
+
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Hobbies" value="Cricket" id="check2">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cricket
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Hobbies" value="Dancing" id="check3">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Dancing
+                                        </label>
+                                        <div id="hbb" style="color:red">
+                                            <br><div class="formerror" style="color:red"></div><br>
+                                        </div>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="customFile">Upload your Image</label>
+                                        <input type="file" class="form-control" accept="image/*"  onchange="Image_preview(event)"  id="upload_file" />
+                                    </div>
+                                    <div id="preview">
+                                    </div>
+
+                                    <div class="d-flex justify-content-end pt-3">
+                                        <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                        <button type="button" class="btn btn-warning btn-lg ms-2" onclick="Save()">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/script/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="~/script/studentmanagement.js"></script>
+<script>
+    $(document).ready(
+        function () 
+        {
+            var id = getParameterByName("Id");
+            getDetailsById(id);
+        }
+    );
+</script>

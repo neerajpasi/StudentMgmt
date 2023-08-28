@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Student Details";
+}
+
+<div>
+    <div class="row pt-4 ">
+        <div class="col-9">
+            <h2 class="text-success">View All Your Student details</h2>
+        </div>
+        <div class="col-3">
+            <a asp-controller="Student" asp-action="Index" class="btn btn-primary">Register</a>
+        </div>
+    </div>
+</div>
+<br />
+@if (true)
+{
+    <table class="table table-bordered table-hover table-striped" width="100%">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Gender</th>
+                <th>City</th>
+                <th>Email Id</th>
+            </tr>
+        </thead>
+        <tbody id="tblproductid">
+        </tbody>
+    </table>
+
+}
+else
+{
+    <p class="text-center"><b>No Student Register</b></p>
+}
+<script src="~/script/code.jquery.com_jquery-3.7.0.min.js"></script>
+<script src="~/script/studentmanagement.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        getData()
+        var id = getParameterByName("Id")
+        Delete(id);
+    });
+</script>
